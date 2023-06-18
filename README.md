@@ -20,8 +20,8 @@ Check the folder screenshot for both mobile and desktop view.
 
 ### Links
 
-- Codesand Box : [solution URL](https://csb-v97655.netlify.app/)
-- Live Site URL: (https://vercel.com/ebi-akangbou)
+- Codesand Box : [Add solution URL here](https://v97655.csb.app/)
+- Live Site URL: (https://csb-v97655-devuzpht9-ebi-akangbou.vercel.app/)
 
 ## My process
 
@@ -44,6 +44,6 @@ I'll like to know more on how I can make my JS code more precise and understanda
 
 ## Author
 
-- Website - [Ebi Akangbou](https://codesandbox.io/u/Ebi%20Precious%20Ultimate)
+- Website - [Ebi Akangbou](https://www.frontendmentor.io/profile/Ebi-Akangbou)
 - Frontend Mentor - [Ebi Akangbou](https://www.frontendmentor.io?ref=challenge)
 - Twitter - [Ebi Akangbou](https://www.twitter.com/EAkangbou)
