@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* end */
+
+/* UTILITIES CLASSES */
+.nowrap {
+  white-space: nowrap;
+}
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+/* end */
+
+/* VARIABLES */
+:root {
+  /* COLOR */
+  --BODY-BG--COLOR: hsl(216, 12%, 8%);
+  --BUTTON-BG--COLOR: hsl(222, 12%, 21%);
+  --MAIN-BG--COLOR: hsl(213, 19%, 18%);
+  --F-COLOR: hsl(216, 12%, 54%);
+  --HEADING-COLOR: hsl(0, 0%, 100%);
+  --HOVER-COLOR: hsl(25, 97%, 53%);
+
+  /* FONT */
+  --FS: 13.5px;
+  --FF: "Overpass", sans-serif;
+}
+
+/* || GENERAL STYLES */
+
+html {
+  min-width: 100vh;
+  overflow-x: hidden;
+}
+body {
+  background-color: var(--BODY-BG--COLOR);
+  font-family: var(--FF);
+  margin: 15px;
+  padding: 10px;
+}
+img {
+  background-color: hsl(222, 12%, 21%);
+  border-radius: 80px;
+  margin-left: 18px;
+  margin-top: 15px;
+  padding: 5px;
+}
+h1 {
+  color: var(--HEADING-COLOR);
+  font-size: 1.6rem;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+p {
+  color: var(--F-COLOR);
+  font-size: var(--FS);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  margin-left: 10px;
+  padding: 5px;
+  padding-top: 13px;
+}
+
+main {
+  border-radius: 20px;
+  height: auto;
+  left: 50%;
+  margin: 0% -0.3em;
+  padding: 10px;
+  padding-bottom: 55px;
+  top: 50%;
+  transform: translateY(35%);
+  width: 310px;
+}
+
+main,
+form {
+  background-color: var(--MAIN-BG--COLOR);
+}
+
+form {
+  column-gap: 0.5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-left: 7px;
+}
+
+button {
+  background-color: var(--BUTTON-BG--COLOR);
+  border-radius: 100%;
+  border: transparent;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  height: 41px;
+  outline: transparent;
+  width: 41px;
+}
+
+/* || COMMENCEMENT of SECOND WEBPAGE DESIGN  */
+
+main,
+main section,
+main section img,
+main section h2,
+main section p {
+  display: block;
+}
+
+main section {
+  margin-bottom: -40px;
+}
+
+main section img {
+  background-color: var(--MAIN-BG--COLOR);
+  margin: 1.3em auto;
+}
+
+main section p.hero__p {
+  background-color: var(--BUTTON-BG--COLOR);
+  border-radius: 60px;
+  color: rgb(223, 145, 0);
+  font-size: 14.3px;
+  height: 38px;
+  margin: 0 auto;
+  padding: 8px;
+  text-align: justify;
+  width: 58%;
+}
+main section h2 {
+  align-items: center;
+  color: var(--HEADING-COLOR);
+  display: flex;
+  flex-flow: column nowrap;
+  font-weight: 500;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+main section p {
+  text-align: center;
+  font-size: var(--FS);
+}
+/* End of second webpage design */
+
+/* || BLOCK */
+.form__button {
+  background-color: var(--HOVER-COLOR);
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  display: grid;
+  font-size: 14px;
+  font-weight: bold;
+  grid-template-columns: repeat(1, 1fr);
+  height: 105%;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  place-content: center;
+  width: 410%;
+}
+/* SECOND WEBPAGE IS HIDDEN HERE */
+.hero {
+  display: none;
+}
+/* End */
+
+.attribution {
+  color: var(--F-COLOR);
+  display: flex;
+  flex-flow: column nowrap;
+  font-style: italic;
+  line-height: 1.3rem;
+  margin: 140px 15%;
+  place-content: center;
+  white-space: pre-wrap;
+}
+.attribution a {
+  color: var(--HEADING-COLOR);
+  cursor: pointer;
+  font-style: normal;
+  text-decoration: none;
+}
+.main__button {
+  background-color: var(--HOVER-COLOR);
+}
+
+/* Javascript change to second page */
+.invisible {
+  display: none;
+}
+.visible {
+  display: block;
+}
+/* End */
+/* Media Query */
+
+/* Iphone 5  */
+@media (max-height: 568px) {
+  main {
+    margin: 0px -20px;
+    width: 308px;
+  }
+}
+
+/* Medium Screen  */
+
+@media screen and (min-width: 758px) {
+  main {
+    margin: 12em 12em;
+  }
+}
+
+/* Desktop Screen  or XL */
+@media screen and (min-width: 1200px) {
+  html {
+    min-width: 98vh;
+  }
+  body {
+    background-color: hsl(216, 12%, 8%);
+    padding: 10px;
+    margin: 15px;
+  }
+  img {
+    padding: 8px;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-left: 12px;
+  }
+
+  p {
+    font-size: 13px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+  }
+
+  main {
+    margin: 0 auto;
+    padding-bottom: 45px;
+    transform: translateY(50%);
+    width: 26%;
+  }
+  form {
+    margin-left: 12px;
+  }
+  button {
+    height: 25px;
+    width: 25px;
+  }
+  button:hover {
+    background-color: hsl(216, 12%, 54%);
+  }
+  main section {
+    padding-bottom: 63px;
+  }
+
+  main section p {
+    font-size: 13.4px;
+  }
+  footer {
+    padding-top: 5px;
+  }
+
+  /* || BLOCK */
+  .form__button {
+    font-size: 12px;
+    height: 95%;
+    margin-top: 20px;
+    width: 454%;
+  }
+  .form__button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+  }
+  .hero {
+    display: none;
+    margin-bottom: -100px;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .hero .hero__p {
+    width: 55%;
+  }
+
+  .attribution {
+    margin: 158px 42%;
+  }
+  :any-link:hover,
+  :any-link:focus {
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+  }
+}
+
+/* || END */
