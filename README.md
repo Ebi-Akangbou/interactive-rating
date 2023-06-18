@@ -20,7 +20,7 @@ Check the folder screenshot for both mobile and desktop view.
 
 ### Links
 
-- Codesand Box : [Add solution URL here](https://csb-v97655.netlify.app/)
+- Codesand Box : [solution URL](https://csb-v97655.netlify.app/)
 - Live Site URL: (https://vercel.com/ebi-akangbou)
 
 ## My process
